@@ -10,7 +10,9 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +47,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
-  margin-top: 10px;
 }
 
 footer {
@@ -92,9 +93,8 @@ ul li::before {
   margin-right: 0.5rem;
 }
 
-.item input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  text-decoration-color: grey;
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
 }
 
 .item > label {
